@@ -1,0 +1,1200 @@
+format-version: 1.2
+date: 02:11:2011 21:34
+saved-by: RamonaNYBG
+auto-generated-by: OBO-Edit 2.1-rc1
+default-namespace: plant_quality_or_trait
+
+[Term]
+id: PO:0025001
+name: leaflet attachment petiolulate
+def: "A leaflet attachment in which a leaflet is attached to a leaf rachis by means of a petiolule." [ISBN:9780801475184]
+xref: PO:PO\:0020050 "petiolule"
+is_a: PO:0032023 ! leaflet attachment
+created_by: RamonaNYBG
+creation_date: 2011-11-02T08:48:04Z
+
+[Term]
+id: PO:0025002
+name: leaflet attachment sessile
+def: "A leaflet attachment in which a leaflet lamina is attached directly to a leaf rachis without a petiolule." [ISBN:9780801475184]
+is_a: PO:0032023 ! leaflet attachment
+created_by: RamonaNYBG
+creation_date: 2011-11-02T08:48:04Z
+
+[Term]
+id: PO:0025003
+name: petiole base quality
+def: "A petiole quality that inheres in a petiole base." [ISBN:9780801475184]
+synonym: "petiole proximal end quality" EXACT []
+xref: PO:0008024 "petiola proximal end"
+is_a: PO:0032024 ! petiole quality
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0025004
+name: petiole base sheathing
+def: "A petiole base quality in which the petiole base expands to clasp the stem." [ISBN:9780801475184]
+comment: This quality differs from PO:0020104 (leaf sheath), in which there is no petiole and the base of the leaf lamina clasps the stem.
+synonym: "petiole proximal end sheathing" EXACT []
+is_a: PO:0025003 ! petiole base quality
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0025005
+name: petiole base pulvinate
+def: "A petiole base quality in which the petiole base has an abruptly swollen portion near the node around which the leaf can flex. Need to reference PO pulvinus." [ISBN:9780801475184]
+synonym: "petiole proximal end pulvinate" EXACT []
+is_a: PO:0025003 ! petiole base quality
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0025006
+name: petiole glands
+is_a: PO:0032024 ! petiole quality
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0025007
+name: petiole glands petiolar
+is_a: PO:0025006 ! petiole glands
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0025008
+name: petiole glands acropetiolar
+is_a: PO:0025006 ! petiole glands
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0025009
+name: petiole cross section
+is_a: PO:0032024 ! petiole quality
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0025010
+name: petiole cross section terete
+is_a: PO:0025009 ! petiole cross section
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0025011
+name: petiole cross section semiterete
+is_a: PO:0025009 ! petiole cross section
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0025012
+name: petiole cross section canaliculate
+is_a: PO:0025009 ! petiole cross section
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0025013
+name: petiole cross section angular
+is_a: PO:0025009 ! petiole cross section
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0025014
+name: petiole cross section winged
+synonym: "petiole cross section winged" EXACT [ISBN:9780801475184]
+is_a: PO:0025009 ! petiole cross section
+created_by: RamonaNYBG
+creation_date: 2011-11-02T09:16:47Z
+
+[Term]
+id: PO:0032001
+name: plant quality
+def: "A dependent continuant that inheres in a bearer (plant anatomical entity) by virtue of how the bearer is related to other entities. An attribute or value of a plant or plant part." [RW:test]
+comment: Attributes are generalized or abstract qualities (size, shape, color) while values are specific types of an attribute that can inhere in an individual (large, square, red). This ontology branch includes both attributes and values, because values are subtypes of attributes. This definition is based on PATO's definition of the root term quality (PATO:0000001). Cross references for mapping to Trait Ontology terms are provided where appropriate. Many of these terms could be defined using cross products between PATO and PO. It is not yet clear if these qualties can inhere in plant development stages as well as plant anatomical entities.
+synonym: "plant attribute" NARROW []
+synonym: "plant phenotype" NARROW []
+synonym: "plant trait" NARROW []
+synonym: "value of plant attribute" NARROW []
+xref: NCBITaxon:3193
+xref: PATO:0000001
+xref: TO:0000387 "trait ontology"
+created_by: Ramona
+creation_date: 2011-07-07T09:48:16Z
+
+[Term]
+id: PO:0032002
+name: plant structure morphology quality
+def: "A plant quality that is a morphology quality (PATO:0000051) and inheres in a plant structure." [RW:test]
+comment: Qualities that describe the anatomical or morphological state of a plant structure (whole plant or plant part), such as size, shape, or position relative to other structures. Does not include functional or physiological qualities. Presence or absence of a plant structure or plant structure feature is a plant structure count quality.
+xref: PATO:0000051 "morphology"
+xref: TO:0000017 "anatomy and morphology related trait"
+is_a: PO:0032001 ! plant quality
+created_by: Ramona
+creation_date: 2011-07-07T09:49:52Z
+
+[Term]
+id: PO:0032003
+name: leaf morphology quality
+def: "A phyllome morphology quality that inheres in a leaf." [ISBN:9780801475184, POC:rw]
+comment: These qualities are taken from the Manual of Leaf Architecture by Ellis et al. Qualities that describe the presence, absence, or count of a part of a leaf are subtypes of  plant structure count (PO:0032113). Some leaf morphology qualities, such as leaf vasculature quality or petiole feature, will only apply to vascular leaves.
+xref: PATO:0000051 "morphology"
+xref: PO:0025034 "leaf"
+xref: TO:0000419 "leaf anatomy and morphlogy trait"
+is_a: PO:0032007 ! phyllome morphology quality
+created_by: Ramona
+creation_date: 2011-07-07T09:50:05Z
+
+[Term]
+id: PO:0032004
+name: shoot system morphology quality
+def: "A collective plant structure morphology quality that inheres in a shoot system." [POC:rw]
+xref: TO:0000077 "shoot anatomy and morphology trait - not an exact match"
+is_a: PO:0032017 ! collective plant structure morphology quality
+created_by: Ramona
+creation_date: 2011-07-07T09:53:02Z
+
+[Term]
+id: PO:0032005
+name: root quality
+xref: TO:0000043 "root anatomy and morphology trait"
+is_a: PO:0032008 ! plant axis morphological quality
+created_by: Ramona
+creation_date: 2011-07-07T09:53:30Z
+
+[Term]
+id: PO:0032006
+name: plant organ morphology quality
+def: "A plant structure morphology quality that inheres in a plant organ." [RW:test]
+is_a: PO:0032002 ! plant structure morphology quality
+created_by: Ramona
+creation_date: 2011-07-07T09:56:53Z
+
+[Term]
+id: PO:0032007
+name: phyllome morphology quality
+def: "A plant organ quality that inheres in a phyllome." [RW:test]
+is_a: PO:0032006 ! plant organ morphology quality
+created_by: Ramona
+creation_date: 2011-07-07T09:57:38Z
+
+[Term]
+id: PO:0032008
+name: plant axis morphological quality
+is_a: PO:0032006 ! plant organ morphology quality
+created_by: Ramona
+creation_date: 2011-07-07T09:59:59Z
+
+[Term]
+id: PO:0032009
+name: shoot axis quality
+is_a: PO:0032008 ! plant axis morphological quality
+created_by: Ramona
+creation_date: 2011-07-07T10:00:20Z
+
+[Term]
+id: PO:0032010
+name: stem quality
+xref: TO:0000361 "stem anatomy and morphology trait"
+is_a: PO:0032009 ! shoot axis quality
+created_by: Ramona
+creation_date: 2011-07-07T10:00:51Z
+
+[Term]
+id: PO:0032011
+name: vegetative shoot system quality
+def: "A shoot system morphology quality that inheres in a vegetative shoot system." [POC:rw]
+is_a: PO:0032004 ! shoot system morphology quality
+created_by: Ramona
+creation_date: 2011-07-07T10:05:13Z
+
+[Term]
+id: PO:0032012
+name: reproductive shoot system morphology quality
+def: "A shoot system morphology quality that inheres in a reproductive shoot system." [POC:rw]
+is_a: PO:0032004 ! shoot system morphology quality
+created_by: Ramona
+creation_date: 2011-07-07T10:05:13Z
+
+[Term]
+id: PO:0032013
+name: inflorescence morphology quality
+def: "A reproductive shoot system morphology quality that inheres in an inflorescence." [POC:rw]
+xref: TO:0000373 "inflorescence anatomy and morphology trait"
+is_a: PO:0032012 ! reproductive shoot system morphology quality
+created_by: Ramona
+creation_date: 2011-07-07T10:05:13Z
+
+[Term]
+id: PO:0032014
+name: flower morphology quality
+def: "A reproductive shoot system morphology quality that inheres in a flower." [POC:rw]
+is_a: PO:0032012 ! reproductive shoot system morphology quality
+created_by: Ramona
+creation_date: 2011-07-07T10:05:13Z
+
+[Term]
+id: PO:0032015
+name: whole plant quality
+is_a: PO:0032002 ! plant structure morphology quality
+created_by: Ramona
+creation_date: 2011-07-07T10:06:31Z
+
+[Term]
+id: PO:0032016
+name: petal quality
+is_a: PO:0032007 ! phyllome morphology quality
+created_by: Ramona
+creation_date: 2011-07-07T10:07:33Z
+
+[Term]
+id: PO:0032017
+name: collective plant structure morphology quality
+def: "A plant structure morphology quality that inheres in a collective plant structure." [RW:test]
+is_a: PO:0032002 ! plant structure morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:02:34Z
+
+[Term]
+id: PO:0032018
+name: leaf attachment
+def: "A leaf morphology quality that xxxx the way that a leaf is attached to a shoot axis." [ISBN:9780801475184, POC:rw]
+comment: Leaf attachment does not include the way multiple leaves are arranged on a stem (see leaf arrangement, PO:0032019). Xxxx=inhering in a leaf by virtue of (need better wording).
+xref: PATO:0001435 "attachment quality"
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032019
+name: leaf arrangement
+def: "A shoot system morphology quality that xxxx the placement of adjacent leaves on the nodes of a shoot axis." [ISBN:9780801475184]
+comment: Xxxx=inhering in a leaf by virtue of (need better wording). This is a shoot system morphology quality (rather than a leaf morphology quality) because it involves the arrangement of multiple leaves on a shoot axis.
+xref: PATO:0002264 "organization quality"
+is_a: PO:0032004 ! shoot system morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032020
+name: leaf organization
+def: "A leaf morphology character that xxxx the entirety of a leaf lamina." [ISBN:9780801475184, POC:rw]
+comment: This trait describes the organization of the parts of a leaflet within a leaf, not the organization of leaves on a plant.
+synonym: "leaflet organization" EXACT []
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032021
+name: leaflet arrangement
+def: "A leaf morphology quality that xxxx the placement of leaflets on the rachis of a leaf." [ISBN:9780801475184]
+comment: This quality only applies to leaves that have a pinnately compound leaf organization (PO:0032126). This is a leaf morphology quality (rather than a leaflet morphology quality) because it involves the arrangement of multiple leaflets on a leaf.
+xref: PATO:0002264 "organization qulatiy"
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032022
+name: leaflet morphology quality
+def: "A leaf morphology quality that inheres in a leaflet." [POC:rw]
+xref: PO:0020049 "leaflet"
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:58:49Z
+
+[Term]
+id: PO:0032023
+name: leaflet attachment
+def: "A leaflet morphology quality that xxxx the way that a leaflets is attached to a leaf rachis." [ISBN:9780801475184]
+comment: This quality only inheres in compound leaves.
+xref: PO:0020055 "leaf rachis"
+is_a: PO:0032022 ! leaflet morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032024
+name: petiole quality
+def: "A leaf morphology quality that inheres in a petiole." [ISBN:9780801475184]
+synonym: "petiole feature" RELATED [ISBN:9780801475184]
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032025
+name: petiolule quality
+synonym: "petiole feature" RELATED [ISBN:9780801475184]
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032026
+name: position of lamina attachment
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032027
+name: leaf lamina size
+xref: TO:0000540 "leaf area"
+is_a: PO:0032046 ! leaf lamina quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032028
+name: leaf lamina length to width ratio
+is_a: PO:0032046 ! leaf lamina quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032029
+name: leaf lamina shape
+is_a: PO:0032046 ! leaf lamina quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032030
+name: leaf medial symmetry
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032031
+name: leaf lobation
+is_a: PO:0032046 ! leaf lamina quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032032
+name: leaf margin quality
+xref: TO:0002635 "leaf margin trait"
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032033
+name: leaf margin type
+xref: TO:0006063 "serrated leaf margin"
+is_a: PO:0032032 ! leaf margin quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032034
+name: leaf margin features
+is_a: PO:0032032 ! leaf margin quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032035
+name: leaf apex quality
+def: "A leaf morphology quality that inheres in a leaf apex." [POC:rw]
+xref: PO:0020137 "leaf apex"
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032036
+name: leaf apex angle
+comment: Use this term if you want to score an exact numerical value for leaf apex angle.
+is_a: PO:0032035 ! leaf apex quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032037
+name: leaf apex shape
+def: "A leaf apex quality that ." [RW:test]
+is_a: PO:0032035 ! leaf apex quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032038
+name: leaf base quality
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032039
+name: leaf base shape
+is_a: PO:0032038 ! leaf base quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032040
+name: leaf base symmetry
+is_a: PO:0032038 ! leaf base quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032041
+name: leaf base angle
+is_a: PO:0032038 ! leaf base quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032042
+name: leaf apex feature (terminal apex feature)
+is_a: PO:0032035 ! leaf apex quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032043
+name: leaf lamina surface quality
+is_a: PO:0032046 ! leaf lamina quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032044
+name: leaf lamina surface texture
+is_a: PO:0032043 ! leaf lamina surface quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032045
+name: leaf lamina surface gland type
+is_a: PO:0032043 ! leaf lamina surface quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:48:40Z
+
+[Term]
+id: PO:0032046
+name: leaf lamina quality
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:49:53Z
+
+[Term]
+id: PO:0032047
+name: leaf vasculature quality
+def: "A leaf quality that (relation) a leaf vascular system or part of a vascular system." [RW:test]
+comment: This includes qualities that describe the type, position, arrangement and number of leaf veins, as well as anatomical qualities of individual veins or vein orders. Only applicable for vascular leaves.
+synonym: "leaf vein quality" EXACT []
+is_a: PO:0032003 ! leaf morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T05:53:32Z
+
+[Term]
+id: PO:0032048
+name: primary vein quality
+is_a: PO:0032047 ! leaf vasculature quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032049
+name: primary vein framework type
+is_a: PO:0032048 ! primary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032050
+name: number of primary veins
+is_a: PO:0032048 ! primary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032051
+name: inflorescence form
+is_a: PO:0032013 ! inflorescence morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-10-12T04:14:18Z
+
+[Term]
+id: PO:0032052
+name: naked basal vein count
+def: "A plant structure count that describes the number of naked basal veins in a single leaf." [POC:rw]
+is_a: PO:0032113 ! plant structure count
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032053
+name: number of basal veins
+is_a: PO:0032113 ! plant structure count
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032054
+name: agrophic veins
+is_a: PO:0032047 ! leaf vasculature quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032055
+name: secondary vein quality
+is_a: PO:0032047 ! leaf vasculature quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032056
+name: major secondary vein framework
+is_a: PO:0032055 ! secondary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032057
+name: interior seconary veins
+is_a: PO:0032055 ! secondary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032058
+name: major secondary vein course
+is_a: PO:0032055 ! secondary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032059
+name: minor secondary vein course
+is_a: PO:0032055 ! secondary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032060
+name: perimarginal vein type
+is_a: PO:0032055 ! secondary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032061
+name: major secondary vein spacing
+is_a: PO:0032055 ! secondary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032062
+name: variation of major secondary angle to midvein
+is_a: PO:0032047 ! leaf vasculature quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032063
+name: major sedoncary attachment to midvein
+is_a: PO:0032055 ! secondary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032064
+name: intersecondary vein quality
+is_a: PO:0032047 ! leaf vasculature quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032065
+name: intersecondary vein proximal course
+is_a: PO:0032064 ! intersecondary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032066
+name: intersecondary vein distal course
+is_a: PO:0032064 ! intersecondary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032067
+name: intersecondary vein frequency
+is_a: PO:0032064 ! intersecondary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032068
+name: teritary vein quality
+is_a: PO:0032047 ! leaf vasculature quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032069
+name: intercostal tertiary vein quality
+is_a: PO:0032068 ! teritary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032070
+name: intercostal tertiary vein fabric type
+is_a: PO:0032069 ! intercostal tertiary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032071
+name: intercostal tertiary vein angle variability
+is_a: PO:0032069 ! intercostal tertiary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032072
+name: epimedial terriary vein quality
+is_a: PO:0032068 ! teritary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032073
+name: epimedial terriary vein fabric type
+is_a: PO:0032072 ! epimedial terriary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032074
+name: course of epimedial terriary veins
+is_a: PO:0032072 ! epimedial terriary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032075
+name: admedial course of epimedial terriary veins
+synonym: "preximal course of epimedial terriary veins" EXACT []
+is_a: PO:0032074 ! course of epimedial terriary veins
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032076
+name: exmedial course of epimedial terriary veins
+synonym: "distal course of epimedial terriary veins" EXACT []
+is_a: PO:0032074 ! course of epimedial terriary veins
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032077
+name: exterior tertiary vein course
+is_a: PO:0032068 ! teritary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032078
+name: minor vein quality
+is_a: PO:0032047 ! leaf vasculature quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032079
+name: quaternary vein quality
+is_a: PO:0032078 ! minor vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032080
+name: quaternary vein fabric type
+is_a: PO:0032079 ! quaternary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032081
+name: quinternary vein quality
+is_a: PO:0032078 ! minor vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032082
+name: quinternary vein fabric type
+is_a: PO:0032081 ! quinternary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032083
+name: areoloation
+is_a: PO:0032047 ! leaf vasculature quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032084
+name: free ending vein quality
+is_a: PO:0032047 ! leaf vasculature quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032085
+name: free ending veinlet branching
+is_a: PO:0032084 ! free ending vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032086
+name: free ending veinlet terminal type
+is_a: PO:0032084 ! free ending vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032087
+name: marginal ultimate veination type
+is_a: PO:0032047 ! leaf vasculature quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:35:41Z
+
+[Term]
+id: PO:0032088
+name: intersecondary vein length
+is_a: PO:0032064 ! intersecondary vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:45:29Z
+
+[Term]
+id: PO:0032089
+name: leaf tooth quality
+is_a: PO:0032032 ! leaf margin quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:53:42Z
+
+[Term]
+id: PO:0032090
+name: tooth spacing
+is_a: PO:0032089 ! leaf tooth quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032091
+name: number of orders of teeth
+is_a: PO:0032089 ! leaf tooth quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032092
+name: number of teeth per centimeter
+is_a: PO:0032089 ! leaf tooth quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032093
+name: sinus shape
+is_a: PO:0032089 ! leaf tooth quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032094
+name: tooth shape
+is_a: PO:0032089 ! leaf tooth quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032095
+name: tooth vein quality
+is_a: PO:0032089 ! leaf tooth quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032096
+name: principal vein of tooth
+is_a: PO:0032095 ! tooth vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032097
+name: termination of principal vein of tooth
+is_a: PO:0032095 ! tooth vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032098
+name: course of ancillary veins relative to principal vein
+is_a: PO:0032095 ! tooth vein quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032099
+name: special feature of tooth apex
+is_a: PO:0032089 ! leaf tooth quality
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032100
+name: tooth apex feature within tooth apex
+is_a: PO:0032099 ! special feature of tooth apex
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032101
+name: tooth apex feature on tooth apex
+is_a: PO:0032099 ! special feature of tooth apex
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032102
+name: nonspecific tooth apex feature
+is_a: PO:0032099 ! special feature of tooth apex
+created_by: RamonaNYBG
+creation_date: 2011-09-07T08:58:32Z
+
+[Term]
+id: PO:0032103
+name: leaf attachment petiolate
+def: "A leaf attachment in which a petiole attaches a leaf to a shoot axis." [ISBN:9780801475184]
+is_a: PO:0032018 ! leaf attachment
+created_by: RamonaNYBG
+creation_date: 2011-09-11T08:45:22Z
+
+[Term]
+id: PO:0032104
+name: leaf attachment sessile
+def: "A leaf attachment in which a leaf lamina attaches directly to a shoot axis." [ISBN:9780801475184]
+comment: No petiole is present.
+xref: PATO:0001436 "sessile (sensu botany)"
+is_a: PO:0032018 ! leaf attachment
+created_by: RamonaNYBG
+creation_date: 2011-09-11T08:45:22Z
+
+[Term]
+id: PO:0032105
+name: leaf apex angle equal to or less than 45 degrees
+synonym: "acute leaf apex angle" EXACT []
+is_a: PO:0032036 ! leaf apex angle
+created_by: RamonaNYBG
+creation_date: 2011-09-11T08:50:26Z
+
+[Term]
+id: PO:0032106
+name: obtuse
+synonym: "obtuse leaf apex shape" EXACT []
+is_a: PO:0032036 ! leaf apex angle
+created_by: RamonaNYBG
+creation_date: 2011-09-11T08:50:26Z
+
+[Term]
+id: PO:0032107
+name: reflex
+is_a: PO:0032036 ! leaf apex angle
+created_by: RamonaNYBG
+creation_date: 2011-09-11T08:50:26Z
+
+[Term]
+id: PO:0032108
+name: alternate leaf arrangement
+def: "A leaf arrangement in which adjacent leaves occur above or below each other on a shoot axis with one leaf per node." [ISBN:9780801475184]
+xref: PATO:0001932 "alternate placement"
+is_a: PO:0032019 ! leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T02:08:18Z
+
+[Term]
+id: PO:0032109
+name: subopposite leaf arrangement
+def: "A leaf arrangement in which adjacent leaves occur in pairs that are nearly but not strictly opposite." [ISBN:9780801475184]
+comment: The leaf pairs are not at the same node.
+is_a: PO:0032019 ! leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T02:08:18Z
+
+[Term]
+id: PO:0032110
+name: opposite leaf arrangement
+def: "A leaf arrangement in which leaves occur in pairs that arise from the same node along the shoot axis." [ISBN:9780801475184]
+comment: The leaf pairs are at the same node.
+xref: PATO:0001933 "opposite"
+is_a: PO:0032019 ! leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T02:08:18Z
+
+[Term]
+id: PO:0032111
+name: whorled leaf arrangement
+def: "A leaf arrangement in which three or more leaves are born at each node." [ISBN:9780801475184]
+comment: This could also inhere in a collective leaf structure.
+xref: PATO:0001951 "whorled"
+is_a: PO:0032019 ! leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T02:08:18Z
+
+[Term]
+id: PO:0032112
+name: plant structure qualitative quality
+comment: This type of quality is used for describing the presence or abscence of a plant structure, as well as conspicuousness.
+xref: PATO:0000068 "qualitative"
+is_a: PO:0032001 ! plant quality
+created_by: RamonaNYBG
+creation_date: 2011-10-12T03:01:06Z
+
+[Term]
+id: PO:0032113
+name: plant structure count
+def: "A plant structure qualitative quality that describes the number of a particular type of plant structure that are part of a whole plant or other plant structure." [POC:rw]
+xref: PATO:0000070 "count"
+is_a: PO:0032112 ! plant structure qualitative quality
+created_by: RamonaNYBG
+creation_date: 2011-10-12T03:03:25Z
+
+[Term]
+id: PO:0032114
+name: plant structure conspicuousness
+def: "A plant structure qualitative quality inhering in a plant structure by virtue of its visibility." [RW:test]
+xref: PATO:0001998 "conspicuousness"
+is_a: PO:0032112 ! plant structure qualitative quality
+created_by: RamonaNYBG
+creation_date: 2011-10-12T03:12:10Z
+
+[Term]
+id: PO:0032115
+name: inflorescence determinancy
+is_a: PO:0032013 ! inflorescence morphology quality
+created_by: RamonaNYBG
+creation_date: 2011-10-12T04:21:16Z
+
+[Term]
+id: PO:0032116
+name: distichous alternate leaf arrangement
+def: "An alternate leaf arrangement in which leaves are in one plane in two ranks on opposite sides of the shoot axis." [ISBN:9780801475184]
+xref: PATO:0001952 "distichous"
+is_a: PO:0032108 ! alternate leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T05:43:25Z
+
+[Term]
+id: PO:0032117
+name: helical alternate leaf arrangement
+def: "An alternate leaf arrangement in which leaves are in a spiral along the axis." [ISBN:9780801475184]
+xref: PATO:0000404 "coiled: Helical is a related synonyms. Meaning not really the same."
+is_a: PO:0032108 ! alternate leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T05:43:25Z
+
+[Term]
+id: PO:0032118
+name: decussate opposite leaf arrangement
+def: "An opposite leaf arrangement in which leaf pairs are inserted at an angle of approximately 90 degrees to those above and below them." [ISBN:9780801475184]
+xref: PATO:0001953 "decussate"
+is_a: PO:0032110 ! opposite leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T06:19:49Z
+
+[Term]
+id: PO:0032119
+name: distichous opposite leaf arrangement
+def: "An opposite leaf arrangement in which leaf pairs are aligned with those above and below them." [ISBN:9780801475184]
+xref: PATO:0001952 "distichous"
+is_a: PO:0032110 ! opposite leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T06:19:49Z
+
+[Term]
+id: PO:0032120
+name: spirodecussate opposite leaf arrangement
+def: "An opposite leaf arrangement in which successive leaf pairs are inserted at angles greater than 90 degrees to those above and below them." [ISBN:9780801475184]
+is_a: PO:0032110 ! opposite leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T06:19:49Z
+
+[Term]
+id: PO:0032121
+name: decussate subopposite leaf arrangment
+def: "A subopposite leaf arrangement in which leaf pairs are inserted at an angle of approximately 90 degrees to those above and below them." [ISBN:9780801475184]
+xref: PATO:0001953 "decussate"
+is_a: PO:0032109 ! subopposite leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T06:26:44Z
+
+[Term]
+id: PO:0032122
+name: distichous  subopposite leaf arrangment
+def: "A subopposite leaf arrangement in which leaf pairs are aligned with those above and below them." [ISBn:9780801475184]
+xref: PATO:0001952 "distichous"
+is_a: PO:0032109 ! subopposite leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T06:26:44Z
+
+[Term]
+id: PO:0032123
+name: spirodecussate subopposite leaf arrangement
+def: "A subopposite leaf arrangement in which successive leaf pairs are inserted at angles greater than 90 degrees to those above and below them." [ISBN:9780801475184]
+is_a: PO:0032109 ! subopposite leaf arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-12T06:26:44Z
+
+[Term]
+id: PO:0032124
+name: compound leaf organization
+def: "A leaf organization in which a leaf consists of two or more leaflets." [ISBN:9780801475184]
+comment: The leaf is divided into two or more laminae not connected by laminar tissue.
+xref: PATO:0001504 "complex"
+is_a: PO:0032020 ! leaf organization
+created_by: RamonaNYBG
+creation_date: 2011-10-15T09:38:02Z
+
+[Term]
+id: PO:0032125
+name: palmately compound leaf organization
+def: "A compound leaf organization in which a leaf has more than two leaflets attached at the apex of a petiole." [ISBN:9780801475184]
+comment: Descriptions of palmately compound leaf organization should include the number of leaflets. A compound leaf with only two leaflets at the end of a petiole has a once-pinnately compound leaf organization.
+is_a: PO:0032124 ! compound leaf organization
+created_by: RamonaNYBG
+creation_date: 2011-10-15T09:38:02Z
+
+[Term]
+id: PO:0032126
+name: pinnately compound leaf organization
+def: "A compound leaf organization in which a leaf has two or more leaflets attached at the apex of a petiole." [ISBN:9780801475184]
+xref: PATO:0000410 "pinnate"
+is_a: PO:0032124 ! compound leaf organization
+created_by: RamonaNYBG
+creation_date: 2011-10-15T09:38:02Z
+
+[Term]
+id: PO:0032127
+name: once compound leaf organization
+def: "A pinnately compound leaf organization with a single order of pinnate leaflets." [ISBN:9780801475184]
+is_a: PO:0032126 ! pinnately compound leaf organization
+created_by: RamonaNYBG
+creation_date: 2011-10-15T09:38:02Z
+
+[Term]
+id: PO:0032128
+name: twice compound leaf organization
+def: "A pinnately compound leaf organization in which leaflets are attached to rachillae that are attached to a rachis." [ISBN:9780801475184]
+comment: The lamina is dissected twice.
+synonym: "bipinnately compound leaf organization" RELATED []
+is_a: PO:0032126 ! pinnately compound leaf organization
+created_by: RamonaNYBG
+creation_date: 2011-10-15T09:38:02Z
+
+[Term]
+id: PO:0032129
+name: thrice compound leaf organization
+def: "A pinnately compound leaf organization in which leaflets are attached to secondary rachillae that are in turn attached to rachillae that are attached to a rachis." [ISBN:9780801475184]
+comment: The lamina is dissected three times.
+synonym: "tripinnately compound leaf organization" RELATED []
+is_a: PO:0032126 ! pinnately compound leaf organization
+created_by: RamonaNYBG
+creation_date: 2011-10-15T09:38:02Z
+
+[Term]
+id: PO:0032130
+name: simple leaf organization
+def: "A leaf organization in which a leaf consists of a single lamina attached to a simple petiole." [ISBN:9780801475184]
+xref: PATO:0001503 "simple"
+is_a: PO:0032020 ! leaf organization
+created_by: RamonaNYBG
+creation_date: 2011-10-15T09:38:02Z
+
+[Term]
+id: PO:0032131
+name: alternate leaflet arrangement
+def: "A leaflet arrangement in which leaflets are arranged alternately on a rachis." [ISBN:9780801475184]
+comment: Adjacent leaflets are arranged above or below one another on the rachis.
+is_a: PO:0032021 ! leaflet arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-17T08:54:42Z
+
+[Term]
+id: PO:0032132
+name: subopposite leaflet arrangement
+def: "A leaflet arrangement in which leaflets are arranged in pairs that arise nearly, but not strictly, on opposite sides of a rachis." [ISBN:9780801475184]
+is_a: PO:0032021 ! leaflet arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-17T08:54:42Z
+
+[Term]
+id: PO:0032133
+name: odd-pinnately compound subopposite leaflet arrangement
+is_a: PO:0032132 ! subopposite leaflet arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-17T08:54:42Z
+
+[Term]
+id: PO:0032134
+name: even-pinnately compound subopposite leaflet arrangement
+is_a: PO:0032132 ! subopposite leaflet arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-17T08:54:42Z
+
+[Term]
+id: PO:0032135
+name: opposite leaflet arrangement
+def: "A leaflet arrangement in which leaflets are arranged in pairs that arise on opposite sides of a rachis." [ISBN:9780801475184]
+is_a: PO:0032021 ! leaflet arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-17T08:54:42Z
+
+[Term]
+id: PO:0032136
+name: odd-pinnately compound opposite leaflet arrangement
+is_a: PO:0032135 ! opposite leaflet arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-17T08:54:42Z
+
+[Term]
+id: PO:0032137
+name: even-pinnately compound opposite leaflet arrangement
+is_a: PO:0032135 ! opposite leaflet arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-17T08:54:42Z
+
+[Term]
+id: PO:0032138
+name: unknown leaflet arrangement
+is_a: PO:0032021 ! leaflet arrangement
+created_by: RamonaNYBG
+creation_date: 2011-10-17T08:54:42Z
+
